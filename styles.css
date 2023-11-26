@@ -23,14 +23,18 @@ html {
   height: 100%;
 }
 
-body {
-  height: inherit;
-  max-width: 1600px;
-  min-width: 800px;
+.page{
+  height: 100%;
+  padding-top: 60px;
   margin: auto;
   position: relative;
-  z-index: 1;
-  font-family: Raleway;
+  display: flex;
+
+  font-family: Raleway, sans-serif;
+  background-color: #fec7ee;
+  color: #000;
+  font-style: normal;
+  line-height: normal;
 }
 
 body::before {
@@ -41,37 +45,33 @@ body::before {
   z-index: -1;
 }
 
-video {
+.page__video {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  position: absolute;
   z-index:-2;
 }
 
-.cover__title {
-  display: flex;
+.page__title {
   z-index: 1;
-  padding-top: 60px;
-  color: #000;
-  justify-content: center;
-  align-items: flex-end;
-  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
   font-size: 116px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
   letter-spacing: 4.06px;
+  text-align: center;
   text-transform: uppercase;
 
 }
 
-.cover__title::after {
+.page__title::after {
   content: "*";
 }
 
-.cover__title:hover::before {
+.page__title:hover::before {
   /* правила для тултипа */
   content: "На самом деле нет.\AВажнее &mdash; научиться ошибаться.";
   white-space: pre;
