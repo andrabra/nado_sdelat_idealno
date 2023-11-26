@@ -30,7 +30,7 @@ body {
   margin: auto;
   position: relative;
   z-index: 1;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway;
 }
 
 body::before {
@@ -64,7 +64,7 @@ video {
   line-height: normal;
   letter-spacing: 4.06px;
   text-transform: uppercase;
-  
+
 }
 
 .cover__title::after {
@@ -79,7 +79,7 @@ video {
   z-index: 2;
   top: 218px;
   right: 66px;
-  
+
   border-radius: 20px;
   border: 2px solid #000;
   background: #FFF;
@@ -91,5 +91,5 @@ video {
   line-height: 35px; /* 100% */
 
   box-shadow: 0px 14px 0 black;
-  
+
 }
