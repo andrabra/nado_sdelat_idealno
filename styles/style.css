@@ -23,7 +23,7 @@ html {
   height: 100%;
 }
 
-.page{
+.page {
   height: 100%;
   margin: auto;
   position: relative;
@@ -56,7 +56,7 @@ body::before {
 
 .page__title {
   z-index: 1;
-  max-width: 780px;
+  max-width: 790px;
   margin: 0 auto;
   font-size: 116px;
   font-weight: 800;
@@ -71,7 +71,7 @@ body::before {
   position: relative;
 }
 
-.page__title:hover{
+.page__title:hover {
     color: #4C4C4C;
     cursor: default;
 }
@@ -89,12 +89,14 @@ body::before {
   border: 2px solid #000;
   background: #FFF;
   padding: 36px 44px;
+  
   color: #000;
   font-size: 35px;
   font-style: normal;
   font-weight: 400;
   line-height: 35px; /* 100% */
-
+  text-transform: none;
+  text-align: left;
   box-shadow: 0px 14px 0 black;
 
 }
