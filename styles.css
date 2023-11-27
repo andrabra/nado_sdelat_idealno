@@ -25,10 +25,9 @@ html {
 
 .page{
   height: 100%;
-  padding-top: 60px;
   margin: auto;
   position: relative;
-  display: flex;
+  
 
   font-family: Raleway, sans-serif;
   background-color: #fec7ee;
@@ -57,7 +56,7 @@ body::before {
 
 .page__title {
   z-index: 1;
-  max-width: 720px;
+  max-width: 780px;
   margin: 0 auto;
   font-size: 116px;
   font-weight: 800;
@@ -69,6 +68,12 @@ body::before {
 
 .page__title::after {
   content: "*";
+  position: relative;
+}
+
+.page__title:hover{
+    color: #4C4C4C;
+    cursor: default;
 }
 
 .page__title:hover::before {
