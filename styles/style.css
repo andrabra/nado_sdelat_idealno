@@ -27,7 +27,6 @@ html {
   height: 100%;
   margin: auto;
   position: relative;
-  
 
   font-family: Raleway, sans-serif;
   background-color: #fec7ee;
@@ -37,7 +36,7 @@ html {
 }
 
 body::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background-color: rgb(255 255 255 / 0.3);
@@ -51,7 +50,7 @@ body::before {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  z-index:-2;
+  z-index: -2;
 }
 
 .page__title {
@@ -63,22 +62,21 @@ body::before {
   letter-spacing: 4.06px;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .page__title::after {
-  content: "*";
+  content: '*';
   position: relative;
 }
 
 .page__title:hover {
-    color: #4C4C4C;
-    cursor: default;
+  color: #4c4c4c;
+  cursor: default;
 }
 
 .page__title:hover::before {
   /* правила для тултипа */
-  content: "На самом деле нет.\AВажнее &mdash; научиться ошибаться.";
+  content: 'На самом деле нет.\AВажнее &mdash; научиться ошибаться.';
   white-space: pre;
   position: absolute;
   z-index: 2;
@@ -87,9 +85,9 @@ body::before {
 
   border-radius: 20px;
   border: 2px solid #000;
-  background: #FFF;
+  background: #fff;
   padding: 36px 44px;
-  
+
   color: #000;
   font-size: 35px;
   font-style: normal;
@@ -98,5 +96,4 @@ body::before {
   text-transform: none;
   text-align: left;
   box-shadow: 0px 14px 0 black;
-
 }
